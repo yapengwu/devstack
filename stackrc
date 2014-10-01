@@ -120,6 +120,14 @@ GIT_TIMEOUT=${GIT_TIMEOUT:-0}
 # Another option is http://review.openstack.org/p
 GIT_BASE=${GIT_BASE:-git://git.openstack.org}
 
+# group-based-policy service
+GBP_REPO=${GBP_REPO:-${GIT_BASE}/stackforge/group-based-policy.git}
+GBP_BRANCH=${GBP_BRANCH:-master}
+
+# group-based-policy client
+GBPCLIENT_REPO=${GBPCLIENT_REPO:-${GIT_BASE}/stackforge/group-based-policy-client.git}
+GBPCLIENT_BRANCH=${GBPCLIENT_BRANCH:-master}
+
 # metering service
 CEILOMETER_REPO=${CEILOMETER_REPO:-${GIT_BASE}/openstack/ceilometer.git}
 CEILOMETER_BRANCH=${CEILOMETER_BRANCH:-master}
