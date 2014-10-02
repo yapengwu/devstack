@@ -29,7 +29,6 @@ REQUIREMENTS_DIR=$DEST/requirements
 function install_infra {
     # bring down global requirements
     git_clone $REQUIREMENTS_REPO $REQUIREMENTS_DIR $REQUIREMENTS_BRANCH
-    sed -i '$a gbptestneutron' $DEST/requirements/global-requirements.txt
 
     # Install pbr
     git_clone $PBR_REPO $PBR_DIR $PBR_BRANCH
