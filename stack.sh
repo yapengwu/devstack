@@ -819,6 +819,7 @@ if is_service_enabled horizon; then
     # dashboard
     install_horizon
     configure_horizon
+    install_gbpui
 fi
 
 if is_service_enabled ceilometer; then
