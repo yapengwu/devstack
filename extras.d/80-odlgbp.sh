@@ -18,8 +18,8 @@ if is_service_enabled odlgbp; then
     elif [[ "$1" == "stack" && "$2" == "extra" ]]; then
         sudo ovs-vsctl --no-wait add-br br-int
         sudo ovs-vsctl --no-wait br-set-external-id br-int bridge-id br-int
-        sudo ovs-vsctl set bridge br-int protocols=OpenFlow13
-        sudo ovs-vsctl set-controller br-int tcp:$ODL_MGR_IP:$ODL_MGR_PORT
+        #sudo ovs-vsctl set bridge br-int protocols=OpenFlow13
+        #sudo ovs-vsctl set-controller br-int tcp:$ODL_MGR_IP:$ODL_MGR_PORT
 
     elif [[ "$1" == "stack" && "$2" == "post-extra" ]]; then
         # no-op
